@@ -57,7 +57,7 @@ public static class Camouflage
             (Options.DisableOnAirship.GetBool() && Options.IsActiveAirship)
             ));
 
-        switch (Options.KPDCamouflageMode.GetValue())
+        switch (Options.OtherCamouflageMode.GetValue())
         { 
             case 0: // Default
                 CamouflageOutfit = new GameData.PlayerOutfit()
@@ -101,13 +101,15 @@ public static class Camouflage
             case 8: // TommyXL
                 CamouflageOutfit = new GameData.PlayerOutfit()
                     .Set("", 17, "hat_baseball_Black", "skin_Scientist-Darkskin", "visor_pusheenSmileVisor", "pet_Pip", "");
+            case 9:
+                CamouflageOutfit = new GameData.PlayerOutfit()
+                    .Set("", 17, "hat_wigJudge", "", "visor_Plsno", "", "");
                 break;
         }
     }
     public static void CheckCamouflage()
     {
         if (!(AmongUsClient.Instance.AmHost && (Options.CommsCamouflage.GetBool() || Camouflager.IsEnable))) return;
-
         var oldIsCamouflage = IsCamouflage;
 
         IsCamouflage = (Utils.IsActive(SystemTypes.Comms) && IsActive) || Camouflager.AbilityActivated;

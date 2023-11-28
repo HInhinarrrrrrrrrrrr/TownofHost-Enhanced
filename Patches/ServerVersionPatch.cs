@@ -1,4 +1,4 @@
-﻿using HarmonyLib;
+﻿/*using HarmonyLib;
 
 namespace TOHE.Patches;
 
@@ -29,3 +29,4 @@ public static class IsVersionModdedPatch
         return false;
     }
 }
+*/

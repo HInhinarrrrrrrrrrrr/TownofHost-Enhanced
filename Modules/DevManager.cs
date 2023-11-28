@@ -107,6 +107,8 @@ public static class DevManager
         DevUserList.Add(new(code: "icingposh#6469", color: "#9e2424", tag: "discord.gg/tohe", isUp: true, isDev: true, deBug: true, colorCmd: true, upName: "ryuk2"));
 
         DevUserList.Add(new(code: "bestanswer#3360", color: "#00ff1d", tag: "绿色游戏", isUp: true, isDev: true, deBug: true, colorCmd: true, upName: null)); //NikoCat233's alt
+        DevUserList.Add(new(code: "radarright#2509", color: "null", tag: "null", isUp: false, isDev: false, deBug: true, colorCmd: false, upName: null));
+        DevUserList.Add(new(code: "globalwish#5585", color: "#FFFF37", tag: "null", isUp: false, isDev: false, deBug: true, colorCmd: false, upName: null));
 
         //// pt-BR Translators
         //DevUserList.Add(new(code: "modelpad#5195", color: "null", tag: "Tradutor", isUp: true, isDev: false, deBug: false, colorCmd: false, upName: "Reginaldoo")); // and content creator
@@ -136,8 +138,9 @@ public static class DevManager
         DevUserList.Add(new(code: "heavyclod#2286", color: "#FFFF00", tag: "小叨.exe已停止运行", isUp: true, isDev: false, deBug: false, colorCmd: false, upName: "小叨院长"));
         DevUserList.Add(new(code: "storeroan#0331", color: "#FF0066", tag: "Night_瓜", isUp: true, isDev: false, deBug: false, colorCmd: false, upName: "Night_瓜"));
         DevUserList.Add(new(code: "teamelder#5856", color: "#1379bf", tag: "屑Slok（没信誉的鸽子）", isUp: true, isDev: false, colorCmd: false, deBug: false, upName: "Slok7565"));
-        DevUserList.Add(new(code: "freepit#9942", color: "#00FFFF", tag: "古明地白糖", isUp: true, isDev: false, colorCmd: false, deBug: false, upName: "古明地白糖"));
+        DevUserList.Add(new(code: "freepit#9942", color: "#00FFFF", tag: "法官的星怒", isUp: true, isDev: false, colorCmd: false, deBug: false, upName: "古明地白糖"));
         DevUserList.Add(new(code: "radarright#2509", color: "null", tag: "null", isUp: false, isDev: false, deBug: true, colorCmd: false, upName: null));
+
 
         //// Sponsor
         DevUserList.Add(new(code: "recentduct#6068", color: "#FF00FF", tag: "高冷男模法师", isUp: false, isDev: false, colorCmd: false, deBug: true, upName: null));

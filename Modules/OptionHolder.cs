@@ -109,7 +109,9 @@ public static class Options
         "CamouflageMode.Pyro",
         "CamouflageMode.ryuk",
         "CamouflageMode.Gurge44",
-        "CamouflageMode.TommyXL"
+        "CamouflageMode.TommyXL",
+        "CamouflageMode.Judge",
+        
     };
 
     // 各役職の詳細設定
@@ -836,7 +838,7 @@ public static class Options
     public static OptionItem GhostCanSeeOtherVotes;
     public static OptionItem GhostCanSeeDeathReason;
     public static OptionItem GhostIgnoreTasks;
-    public static OptionItem KPDCamouflageMode;
+    public static OptionItem OtherCamouflageMode;
 
     // Guess Restrictions //
     public static OptionItem TerroristCanGuess;
@@ -2964,7 +2966,7 @@ public static class Options
         RoleAssigningAlgorithm = StringOptionItem.Create(60400, "RoleAssigningAlgorithm", roleAssigningAlgorithms, 4, TabGroup.SystemSettings, true)
             .RegisterUpdateValueEvent((object obj, OptionItem.UpdateValueEventArgs args) => IRandom.SetInstanceById(args.CurrentValue))
             .SetHeader(true);
-        KPDCamouflageMode = StringOptionItem.Create(60410, "KPDCamouflageMode", CamouflageMode, 0, TabGroup.SystemSettings, false)
+        OtherCamouflageMode = StringOptionItem.Create(60410, "OtherCamouflageMode", CamouflageMode, 0, TabGroup.SystemSettings, false)
             .SetHeader(true)
             .SetColor(new Color32(255, 192, 203, byte.MaxValue));
 

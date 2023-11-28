@@ -2596,6 +2596,7 @@
   "CamouflageMode.ryuk": "<color=#9e2424>ryuk</color>",
   "CamouflageMode.Gurge44": "<color=#E9F7FF>Gurge44</color>",
   "CamouflageMode.TommyXL": "<color=#EC7578>TommyXL</color>",
+  "CamouflageMode.Judge": "<color=#FFFF37>Judge</color>",
   "DeathCmd.HeyPlayer": "Привет ",
   "DeathCmd.YouAreRole": ", похоже, ты ",
   "DeathCmd.NotDead": "Вы еще не умерли, это можно использовать только после того, как вы умрете\n\nПроверьте снова после того, как вы были <b><color=#ff1919>убиты</color></b>",
