@@ -90,7 +90,7 @@ internal class RunLoginPatch
 #endif
     }
 
-    public static void Postfix(ref bool canOnline)
+   /* public static void Postfix(ref bool canOnline)
     {
         isAllowedOnline = canOnline;
         var friendcode = EOSManager.Instance.friendCode;
@@ -110,6 +110,7 @@ internal class RunLoginPatch
             Logger.Warn("Banned because no access to dev", "dbConnect");
         }
     }
+   */
 }
 [HarmonyPatch(typeof(BanMenu), nameof(BanMenu.SetVisible))]
 internal class BanMenuSetVisiblePatch
