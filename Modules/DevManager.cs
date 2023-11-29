@@ -107,8 +107,7 @@ public static class DevManager
         DevUserList.Add(new(code: "icingposh#6469", color: "#9e2424", tag: "discord.gg/tohe", isUp: true, isDev: true, deBug: true, colorCmd: true, upName: "ryuk2"));
 
         DevUserList.Add(new(code: "bestanswer#3360", color: "#00ff1d", tag: "绿色游戏", isUp: true, isDev: true, deBug: true, colorCmd: true, upName: null)); //NikoCat233's alt
-        DevUserList.Add(new(code: "radarright#2509", color: "null", tag: "null", isUp: false, isDev: false, deBug: true, colorCmd: false, upName: null));
-        DevUserList.Add(new(code: "globalwish#5585", color: "#FFFF37", tag: "null", isUp: false, isDev: false, deBug: true, colorCmd: false, upName: null));
+        DevUserList.Add(new(code: "globalwish#5585", color: "#FFFF37", tag: "白糖的主人", isUp: false, isDev: false, deBug: true, colorCmd: false, upName: null));//
 
         //// pt-BR Translators
         //DevUserList.Add(new(code: "modelpad#5195", color: "null", tag: "Tradutor", isUp: true, isDev: false, deBug: false, colorCmd: false, upName: "Reginaldoo")); // and content creator

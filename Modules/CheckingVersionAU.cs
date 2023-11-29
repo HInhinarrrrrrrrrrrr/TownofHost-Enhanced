@@ -4,6 +4,7 @@ using UnityEngine;
 namespace TOHE.Modules;
 
 // https://github.com/tukasa0001/TownOfHost/blob/main/Modules/VersionChecker.cs
+// 检查版本是否支持
 public static class VersionChecker
 {
     public static bool IsSupported { get; private set; } = true;

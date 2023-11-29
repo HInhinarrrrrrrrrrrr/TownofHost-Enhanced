@@ -101,9 +101,10 @@ public static class Camouflage
             case 8: // TommyXL
                 CamouflageOutfit = new GameData.PlayerOutfit()
                     .Set("", 17, "hat_baseball_Black", "skin_Scientist-Darkskin", "visor_pusheenSmileVisor", "pet_Pip", "");
+                break;
             case 9:
                 CamouflageOutfit = new GameData.PlayerOutfit()
-                    .Set("", 17, "hat_wigJudge", "", "visor_Plsno", "", "");
+                  .Set("", 17, "hat_wigJudge", "", "visor_Plsno", "", "");
                 break;
         }
     }
