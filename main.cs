@@ -964,3 +964,19 @@ public enum TieMode
     All,
     Random
 }
+public enum CustomRoleType
+{
+    Imposter,
+    Crewmate,
+    Neutral,
+    Addition,
+}
+
+public enum VN
+{ 
+    Impostor,
+    Shapeshifter,
+    Crewmate,
+    Engineer,
+    Scientist
+}

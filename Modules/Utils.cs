@@ -342,6 +342,14 @@ public static class Utils
     {
         return GetRoleString(Enum.GetName(typeof(CustomRoles), role), forUser);
     }
+    ///<summary>
+    /// Get No,Yes,Always String
+    /// </summary>
+    /// <summary>
+    /// </summary>
+    /// <param name="role"></param>
+    /// <param name="parentheses"></param>
+    /// <returns></returns>
     public static string GetRoleMode(CustomRoles role, bool parentheses = true)
     {
         if (Options.HideGameSettings.GetBool() && Main.AllPlayerControls.Length > 1)

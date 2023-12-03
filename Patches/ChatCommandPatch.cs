@@ -1163,6 +1163,7 @@ internal class ChatCommands
         }
         return false;
     }
+    //
     public static void SendRolesInfo(string role, byte playerId, bool isDev = false, bool isUp = false)
     {
         role = role.Trim().ToLower();
@@ -2036,12 +2037,10 @@ internal class ChatCommands
                 if (!GameStates.IsLobby && player.IsAlive())
                 {
                     Utils.SendMessage(GetString("RandCommandInfo"), player.PlayerId);
-                    break;
                 }
                 if (subArgs == "" || !int.TryParse(subArgs, out int playerChoice1) || subArgs2 == "" || !int.TryParse(subArgs2, out int playerChoice2))
                 {
                     Utils.SendMessage(GetString("RandCommandInfo"), player.PlayerId);
-                    break;
                 }
                 else
                 {
@@ -2050,8 +2049,15 @@ internal class ChatCommands
                     Main.GuessNumber[player.PlayerId][0] = rand.Next(playerChoice1, playerChoice2);
                     botResult = Main.GuessNumber[player.PlayerId][0];
                     Utils.SendMessage(string.Format(GetString("RandResult"), Main.GuessNumber[player.PlayerId][0]), player.PlayerId);
-                    break;
+
                 }
+                break;
+            case "/name":
+                
+
+                
+                break;
+
 
 
             default:

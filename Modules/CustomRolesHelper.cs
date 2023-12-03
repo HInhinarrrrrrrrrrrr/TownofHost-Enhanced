@@ -161,7 +161,7 @@ static class CustomRolesHelper
                 _ => role.IsImpostor() ? CustomRoles.Impostor : CustomRoles.Crewmate,
             };
     }
-    // Erased RoleType - Impostor, Shapeshifter, Crewmate, Engineer, Scientist (Not Neutrals)
+    // Erased CustomRoleType - Impostor, Shapeshifter, Crewmate, Engineer, Scientist (Not Neutrals)
     public static CustomRoles GetErasedRole(RoleTypes roleType, CustomRoles role)
     {
         return role.IsVanilla()
