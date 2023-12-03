@@ -60,8 +60,6 @@ public static class Camouflage
         switch (Options.OtherCamouflageMode.GetValue())
         { 
             case 0: // Default
-                CamouflageOutfit = new GameData.PlayerOutfit()
-                    .Set("", 15, "", "", "", "", "");
                 break;
 
             case 1: // Host's outfit
@@ -102,10 +100,15 @@ public static class Camouflage
                 CamouflageOutfit = new GameData.PlayerOutfit()
                     .Set("", 17, "hat_baseball_Black", "skin_Scientist-Darkskin", "visor_pusheenSmileVisor", "pet_Pip", "");
                 break;
-            case 9:
+            case 9: //法官
                 CamouflageOutfit = new GameData.PlayerOutfit()
-                  .Set("", 17, "hat_wigJudge", "", "visor_Plsno", "", "");
+                  .Set("", 5, "hat_wigJudge", "", "visor_Plsno", "", "");
                 break;
+            case 10: //古明地白糖
+                CamouflageOutfit = new GameData.PlayerOutfit()
+                .Set("", 10, "", "", "", "", "");
+                break;
+
         }
     }
     public static void CheckCamouflage()

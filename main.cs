@@ -40,8 +40,8 @@ public class Main : BasePlugin
     public static readonly string MainMenuText = " ";
 
     public const string PluginGuid = "com.0xdrmoe.townofhostenhanced";
-    public const string PluginVersion = "1.2.1";
-    public const string PluginDisplayVersion = "1.2.1";
+    public const string PluginVersion = "1.3.0";
+    public const string PluginDisplayVersion = "1.3.0";
     public static readonly string SupportedVersionAU = "2023.10.24";
     /******************* Change one of the three variables to true before making a release. *******************/
     public const bool Canary = true; // Unused variable? ---- not unused anymore :)
@@ -267,7 +267,7 @@ public class Main : BasePlugin
         TName_Snacks_EN[IRandom.Instance.Next(0, TName_Snacks_EN.Count)];
 
     private static void CreateTemplateRoleColorFile()
-    {
+    {   
         var sb = new StringBuilder();
         foreach (var title in roleColors) sb.Append($"{title.Key}:\n");
         File.WriteAllText(@$"./{LANGUAGE_FOLDER_NAME}/templateRoleColor.dat", sb.ToString());

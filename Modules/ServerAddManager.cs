@@ -13,8 +13,11 @@ public static class ServerAddManager
     private static ServerManager serverManager = DestroyableSingleton<ServerManager>.Instance;
     public static void Init()
     {
-        if (CultureInfo.CurrentCulture.Name.StartsWith("zh") && serverManager.AvailableRegions.Count == 7) return;
-        if (!CultureInfo.CurrentCulture.Name.StartsWith("zh") && serverManager.AvailableRegions.Count == 6) return;
+        if (!CultureInfo.CurrentCulture.Name.StartsWith("zh") && serverManager.AvailableRegions.Count == 6 || CultureInfo.CurrentCulture.Name.StartsWith("zh") && serverManager.AvailableRegions.Count == 7)
+        {
+            Logger.Info("Server Add Already", "ServerAdd");
+            return;
+        }
 
         serverManager.AvailableRegions = ServerManager.DefaultRegions;
         List<IRegionInfo> regionInfos = new();
@@ -27,8 +30,8 @@ public static class ServerAddManager
         regionInfos.Add(CreateHttp("au-as.duikbo.at", "Modded Asia (MAS)", 443, true));
         regionInfos.Add(CreateHttp("www.aumods.us", "Modded NA (MNA)", 443, true));
         regionInfos.Add(CreateHttp("au-eu.duikbo.at", "Modded EU (MEU)", 443, true));
-
         regionInfos.Where(x => !serverManager.AvailableRegions.Contains(x)).Do(serverManager.AddOrUpdateRegion);
+        Logger.Info("Server Add Done", "ServerAdd");
     }
 
     public static IRegionInfo CreateHttp(string ip, string name, ushort port, bool ishttps)

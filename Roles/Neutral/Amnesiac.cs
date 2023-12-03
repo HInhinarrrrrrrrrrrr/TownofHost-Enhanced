@@ -13,7 +13,7 @@ public static class Amnesiac
     public static OptionItem RememberCooldown;
     public static OptionItem RefugeeKillCD;
     public static OptionItem IncompatibleNeutralMode;
-    public static readonly string[] amnesiacIncompatibleNeutralMode =
+    public static readonly string[] amnesiacIncompatibleNeutralMode = 
     {
         "Role.Amnesiac",
         "Role.Witch",

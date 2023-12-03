@@ -1383,7 +1383,7 @@ static class ExtendedPlayerControl
 
         else return false;
     }
-    public static bool CanBeTeleported(this PlayerControl player)
+    public static bool CanBeTeleported(this PlayerControl player) 
     {
         if (player.Data == null // Check if PlayerData is not null
             || Main.MeetingIsStarted
